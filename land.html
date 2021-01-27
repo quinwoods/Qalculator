@@ -3,12 +3,24 @@
 	
 	  a: <input type="number" name="a" id="a"><br>
 	  b: <input type="number" name="b" id="b"><br>
-	  <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)">Add</button>
+	  <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)">
+		  Add
+	  </button>
+	  <button onclick="showa(document.getElementById('a').value)">
+		  Show A
+	  </button>
+	  <button onclick="showb(document.getElementById('b').value)">
+			Show B
+		</button>
+  
 	<h1 id="answer">
 		
 	</h1>
-	
-	
+	<svg id="line1" height = 500 width = 500>
+		</svg>
+	<svg id="line2" height = 500 width = 500>
+		</svg>
+
 	<script src="fertilizer.js">
 	</script>
 	</body>
