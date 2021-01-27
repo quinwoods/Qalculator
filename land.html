@@ -1,16 +1,14 @@
 <body>
-	<h1>
-		Adding together two entities
-	</h1>
-	<form>
-		a: <input type="number" name="a" id="a" /> 
-		b: <input type="number" name="b" id="b" />
-		<button onclick = show(document.getElementById("a"))>
-			show
-		</button>
-	</form>
-	<h1 id="answer">
-		
-	</h1>
-	<script src="fertilizer.js" charset="utf-8"></script>
-</body>
+	<h1>Adding 'a' and 'b'</h1>
+	
+	  a: <input type="number" name="a" id="a"><br>
+	  b: <input type="number" name="b" id="b"><br>
+	  <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)">Add</button>
+	
+	<script>
+	  function add(a,b) {
+		var sum = parseInt(a) + parseInt(b);
+		alert(sum);
+	  }
+	</script>
+	</body>
