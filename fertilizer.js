@@ -2,6 +2,8 @@
 function add(a,b) {
 	var sum = parseInt(a) + parseInt(b);
 	document.getElementById("answer").innerHTML = sum;
+	document.getElementById('result').innerHTML = '<line x1 = 0 y1 = 0 x2 = ' + sum + '  + y2 = 0 style=stroke:rgb(255,0,0);stroke-width:2/>';
+
   }
   
  function showa(a){
